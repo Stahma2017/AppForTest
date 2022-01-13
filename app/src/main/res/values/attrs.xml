@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextFieldView">
+        <attr name="textFieldInputType" format="enum">
+            <enum name="text" value="0" />
+            <enum name="digits" value="1" />
+            <enum name="text_password" value="2" />
+            <enum name="digit_password" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>

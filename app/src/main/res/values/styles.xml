@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BasicBackgroundTheme" parent="Theme.AppForTest">
+       <!-- <item name="android:windowBackground">@drawable/background_test</item>-->
+    </style>
+
+</resources>

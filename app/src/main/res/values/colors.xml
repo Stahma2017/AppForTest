@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+
+    <color name="text_color">#CCFFFFFF</color>
+    <color name="large_hint_color">#99FFFFFF</color>
+    <color name="small_hint_color">#99FFFFFF</color>
+
+    <color name="movix_blue">#0F50F0</color>
+    <color name="movix_purple">#DFB4F6</color>
+    <color name="movix_coral">#DE3665</color>
+    <color name="movix_ocean">#000033</color>
+    <color name="movix_ocean_70">#B3000033</color>
+    <color name="movix_red">#D32F2F</color>
+    <color name="movix_space">#181F57</color>
+    <color name="movix_yellow">#FED130</color>
+
+    <color name="navy">#00005A</color>
+    <color name="navy_blue">#0F50F0</color>
+    <color name="navy_blue_5">#0D0F50F0</color>
+    <color name="navy_blue_dark">#0E4BE2</color>
+    <color name="navy_blue_10">#1A0F50F0</color>
+
+    <color name="navy_blue_101">#33FFFFFF</color>
+
+    <color name="mauve">#DE9FFF</color>
+    <color name="persian_blue">#0039C6</color>
+    <color name="cornflower_blue">#4D80FF</color>
+    <color name="mauve_light">#DFB4F6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_5">#0DFFFFFF</color>
+    <color name="white_0">#00FFFFFF</color>
+    <color name="white_10">#1AFFFFFF</color>
+    <color name="white_15">#26FFFFFF</color>
+    <color name="white_29">#4AFFFFFF</color>
+    <color name="white_30">#4DFFFFFF</color>
+    <color name="white_40">#66FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="white_52">#85FFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="white_20">#33FFFFFF</color>
+    <color name="white_80">#CCFFFFFF</color>
+    <color name="c_white_70">#b3ffffff</color>
+    <color name="c_white_50">#80ffffff</color>
+    <color name="c_white_20">#30ffffff</color>
+    <color name="c_white_4">#0AFFFFFF</color>
+    <color name="egyptian_blue">#1F40A4</color>
+    <color name="egyptian_blue_dark">#0B3CB5</color>
+
+    <color name="lime_0">#0000FF00</color>
+    <color name="mauve_dark">#DFB5F7</color>
+    <color name="mauve_dark_0">#00DFB5F7</color>
+    <color name="sapphire">#172467</color>
+
+    <color name="sapphire_sdf">#4DFFFFFF</color>
+
+    <color name="dark_goldenrod">#B78B19</color>
+    <color name="raw_umber">#6C510B</color>
+    <color name="black_25">#40000000</color>
+
+    <color name="deep_koamaru">#2C3368</color>
+    <color name="celery">#B3C745</color>
+
+    <color name="midnight_blue">#040459</color>
+    <color name="midnight_express_dark">#000033</color>
+    <color name="midnight_express">#0C0C3C</color>
+    <color name="midnight_express_light">#050537</color>
+
+    <color name="movix_green">#43A047</color>
+
+    <color name="sunglow">#FED130</color>
+
+    <color name="slate_blue_16">#296E45DE</color>
+    <color name="slate_blue_0">#006E45DE</color>
+
+    <color name="lucky_point">#181F57</color>
+    <color name="malibu">#2B89ABFF</color>
+
+
+
+    <color name="main_background_color">#009688</color>
+</resources>
