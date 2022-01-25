@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="royal_blue">#466FEF</color>
+    <color name="festival">#F0C546</color>
+    <color name="magnolia">#F5F3F9</color>
+
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
+
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
@@ -12,8 +17,6 @@
     <color name="small_hint_color">#99FFFFFF</color>
 
     <color name="movix_blue">#0F50F0</color>
-    <color name="movix_purple">#DFB4F6</color>
-    <color name="movix_coral">#DE3665</color>
     <color name="movix_ocean">#000033</color>
     <color name="movix_ocean_70">#B3000033</color>
     <color name="movix_red">#D32F2F</color>
@@ -83,5 +86,5 @@
 
 
 
-    <color name="main_background_color">#009688</color>
+    <color name="main_background_color">@color/purple_700</color>
 </resources>

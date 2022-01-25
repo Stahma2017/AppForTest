@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="startIcon" format="reference" />
+    <attr name="endIcon" format="reference" />
     <declare-styleable name="TextFieldView">
         <attr name="textFieldInputType" format="enum">
             <enum name="text" value="0" />
@@ -7,5 +9,17 @@
             <enum name="text_password" value="2" />
             <enum name="digit_password" value="3" />
         </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ToolbarView">
+        <attr name="startIcon" />
+        <attr name="endIcon" />
+        <attr name="startIconText" format="reference" />
+        <attr name="titleText" format="reference" />
+        <attr name="subtitleText" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CompoundBackgroundView">
+        <attr name="cb_header" format="reference" />
     </declare-styleable>
 </resources>

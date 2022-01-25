@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppForTest">
         <activity
-            android:name=".MainActivity"
+            android:name="com.stas.ui.main.MainActivity"
             android:theme="@style/BasicBackgroundTheme"
             android:windowSoftInputMode="adjustResize"
             android:exported="true">
@@ -20,6 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.stas.ui.coordinator.CoordinatorActivity"/>
     </application>
 
 </manifest>
