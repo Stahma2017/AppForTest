@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="button_view_content_height_normal">56dp</dimen>
-    <dimen name="button_view_content_height_medium">48dp</dimen>
-    <dimen name="button_view_content_height_small">40dp</dimen>
 
-    <dimen name="button_view_text_icon_margin_normal">8dp</dimen>
-    <dimen name="button_view_text_icon_margin_medium">8dp</dimen>
-    <dimen name="button_view_text_icon_margin_small">4dp</dimen>
+    <dimen name="app_bar_height">55dp</dimen>
 
-    <dimen name="button_view_icon_size_normal">24dp</dimen>
-    <dimen name="button_view_icon_size_medium">20dp</dimen>
-    <dimen name="button_view_icon_size_small">16dp</dimen>
 
-    <dimen name="button_view_icon_margin_normal">36dp</dimen>
-    <dimen name="button_view_icon_margin_medium">20dp</dimen>
-    <dimen name="button_view_icon_margin_small">20dp</dimen>
-
-    <dimen name="rounded_button_secondary_view_size">48dp</dimen>
-
-    <dimen name="trailer_button_view_default_size">52dp</dimen>
-    <dimen name="trailer_button_view_big_size">64dp</dimen>
-    <dimen name="trailer_button_view_icon_size">32dp</dimen>
 
 
     <dimen name="button_view_height">55dp</dimen>
@@ -32,19 +15,15 @@
     <dimen name="button_view_end_image_size">20dp</dimen>
     <dimen name="button_view_end_image_start_margin">8dp</dimen>
     <dimen name="button_view_end_image_end_margin">20dp</dimen>
-
     <dimen name="button_view_corner_radius">50dp</dimen>
     <dimen name="button_view_border_width">2dp</dimen>
     <dimen name="button_view_border_gap">2dp</dimen>
-
     <dimen name="button_secondary_view_corner_radius">50dp</dimen>
     <dimen name="button_secondary_view_border_width">2dp</dimen>
     <dimen name="button_secondary_view_border_gap">2dp</dimen>
-
     <dimen name="button_toggle_view_corner_radius">50dp</dimen>
     <dimen name="button_toggle_view_border_width">2dp</dimen>
     <dimen name="button_toggle_view_border_gap">2dp</dimen>
-
     <!--region text field-->
     <dimen name="text_field_border_stroke_width">2dp</dimen>
     <dimen name="text_field_border_corner_radius">8dp</dimen>
@@ -59,44 +38,4 @@
     <dimen name="text_field_error_top_margin">12dp</dimen>
     <!--endregion-->
 
-    <!--region toolbar-->
-    <dimen name="toolbar_height">64dp</dimen>
-    <dimen name="toolbar_start_button_size">28dp</dimen>
-    <dimen name="toolbar_start_button_start_margin">24dp</dimen>
-
-    <dimen name="toolbar_start_button_title_height">28dp</dimen>
-    <dimen name="toolbar_start_button_title_start_margin">33dp</dimen>
-
-    <dimen name="toolbar_end_icon_size">28dp</dimen>
-    <dimen name="toolbar_end_icon_end_margin">24dp</dimen>
-
-    <dimen name="toolbar_title_top_margin">8dp</dimen>
-    <dimen name="toolbar_title_horizontal_margin">56dp</dimen>
-
-    <dimen name="toolbar_subtitle_horizontal_margin">56dp</dimen>
-    <dimen name="toolbar_subtitle_top_margin">4dp</dimen>
-    <dimen name="toolbar_subtitle_gone_top_margin">0dp</dimen>
-    <!--endregion-->
-
-    <!--region search view-->
-    <dimen name="search_field_height">40dp</dimen>
-    <dimen name="search_field_start_margin">12dp</dimen>
-    <dimen name="search_field_search_start_margin">14dp</dimen>
-    <dimen name="search_field_search_end_margin">14dp</dimen>
-    <dimen name="search_field_edit_text_end_margin">4dp</dimen>
-    <dimen name="search_field_edit_text_start_margin">4dp</dimen>
-
-    <dimen name="search_field_focused_border_width">2dp</dimen>
-    <dimen name="search_field_focused_gap_width">2dp</dimen>
-    <dimen name="search_field_default_border_width">1dp</dimen>
-    <dimen name="search_field_default_gap_width">1dp</dimen>
-    <dimen name="search_field_content_background_corner_radius">18dp</dimen>
-    <dimen name="search_field_content_background_glass_border_width">2dp</dimen>
-    <!--endregion-->
-
-    <dimen name="switch_default_width">62dp</dimen>
-    <dimen name="switch_default_height">32dp</dimen>
-    <dimen name="switch_background_corner_radius">32dp</dimen>
-    <dimen name="switch_pointer_size">28dp</dimen>
-    <dimen name="switch_pointer_horizontal_padding">2dp</dimen>
 </resources>

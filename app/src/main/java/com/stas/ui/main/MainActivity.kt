@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
   }
 
   enum class Screen {
-    IMAGE_MATRIX_FRAGMENT,
+    NONE,
     DIALOG_FRAGMENT,
     COORDINATOR
   }
