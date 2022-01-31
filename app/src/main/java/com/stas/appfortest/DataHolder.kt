@@ -6,7 +6,8 @@ import com.stas.ui.main.SamplesAdapter
 object DataHolder {
   val samples = mutableListOf<SamplesAdapter.SampleItem>(
     SamplesAdapter.SampleItem("Simple Dialog", MainActivity.Screen.DIALOG_FRAGMENT),
-    SamplesAdapter.SampleItem("Coordinator", MainActivity.Screen.COORDINATOR)
+    SamplesAdapter.SampleItem("Coordinator", MainActivity.Screen.COORDINATOR),
+    SamplesAdapter.SampleItem("Complex Background", MainActivity.Screen.COMPLEX_BACKGROUND)
   )
 
   val coordinatorFragmentItems = mutableListOf<SamplesAdapter.SampleItem>(

@@ -3,10 +3,13 @@ package com.stas.ui.main
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.fragment.app.add
+import androidx.fragment.app.commit
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.stas.appfortest.DataHolder
 import com.stas.appfortest.R
+import com.stas.ui.complexbackgroun.ComplexBackgroundFragment
 import com.stas.ui.coordinator.CoordinatorActivity
 import com.stas.ui.dialog.TestDialogFragment
 
@@ -54,12 +57,20 @@ class MainActivity : AppCompatActivity() {
       Screen.COORDINATOR -> {
         startActivity(Intent(this, CoordinatorActivity::class.java))
       }
+      Screen.COMPLEX_BACKGROUND -> {
+        supportFragmentManager.commit {
+          setReorderingAllowed(true)
+          addToBackStack(screen.name)
+          add<ComplexBackgroundFragment>(R.id.fragment_container)
+        }
+      }
     }
   }
 
   enum class Screen {
     NONE,
     DIALOG_FRAGMENT,
-    COORDINATOR
+    COORDINATOR,
+    COMPLEX_BACKGROUND
   }
 }
