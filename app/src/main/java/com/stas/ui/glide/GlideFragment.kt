@@ -13,7 +13,7 @@ class GlideFragment : Fragment() {
 
   lateinit var image: ImageView
 
-  val url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyV-agmC4dh4pZ94ItyA29hYgrpXjX2_uB7-Z6010scENP-Eu8sXesFFfBmkjDKhtXN-U&usqp=CAU"
+  private val url = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyV-agmC4dh4pZ94ItyA29hYgrpXjX2_uB7-Z6010scENP-Eu8sXesFFfBmkjDKhtXN-U&usqp=CAU"
 
   override fun onCreateView(
     inflater: LayoutInflater, container: ViewGroup?,
