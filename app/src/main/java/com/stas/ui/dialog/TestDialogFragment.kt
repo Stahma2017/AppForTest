@@ -20,14 +20,22 @@ class TestDialogFragment : DialogFragment() {
   }
 
   override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+    setStyle(STYLE_NO_TITLE, R.style.ThrobberDialog)
     val dialog =  super.onCreateDialog(savedInstanceState)
     //dialog.getWindow()?.requestFeature(Window.FEATURE_NO_TITLE);
     return dialog;
   }
 
+  override fun onStart() {
+    super.onStart()
+    val width = ViewGroup.LayoutParams.MATCH_PARENT
+    val height = ViewGroup.LayoutParams.MATCH_PARENT
+    dialog?.window?.setLayout(width, height)
+  }
+
   override fun onResume() {
     super.onResume()
-    val dialog = dialog
+    /*val dialog = dialog
     val p = Point()
     activity!!.windowManager.defaultDisplay.getSize(p)
     Log.d("TEST32", p.y.toString())
@@ -35,7 +43,7 @@ class TestDialogFragment : DialogFragment() {
     val params : WindowManager.LayoutParams = window!!.attributes
     params.width = 800
     params.height = 800
-    window.attributes = params
+    window.attributes = params*/
   }
 
 }

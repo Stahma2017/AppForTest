@@ -5,4 +5,12 @@
        <!-- <item name="android:windowBackground">@drawable/background_test</item>-->
     </style>
 
+    <style name="ThrobberDialog" parent="@style/Theme.AppCompat">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="colorAccent">@color/white_60</item>
+    </style>
+
 </resources>

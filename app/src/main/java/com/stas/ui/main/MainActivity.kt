@@ -12,6 +12,8 @@ import com.stas.appfortest.R
 import com.stas.ui.complexbackgroun.ComplexBackgroundFragment
 import com.stas.ui.coordinator.CoordinatorActivity
 import com.stas.ui.dialog.TestDialogFragment
+import com.stas.ui.fragmentmanager.FragmentManagerFragment
+import com.stas.ui.glide.GlideFragment
 
 class MainActivity : AppCompatActivity() {
   lateinit var samples: RecyclerView
@@ -19,7 +21,6 @@ class MainActivity : AppCompatActivity() {
   private val adapter: SamplesAdapter = SamplesAdapter { sampleType ->
     navigateTo(sampleType)
   }
-
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
@@ -64,6 +65,20 @@ class MainActivity : AppCompatActivity() {
           add<ComplexBackgroundFragment>(R.id.fragment_container)
         }
       }
+      Screen.FRAGMENT_MANAGER -> {
+        supportFragmentManager.commit {
+          setReorderingAllowed(true)
+          addToBackStack(screen.name)
+          add<FragmentManagerFragment>(R.id.fragment_container)
+        }
+      }
+      Screen.GLIDE -> {
+        supportFragmentManager.commit {
+          setReorderingAllowed(true)
+          addToBackStack(screen.name)
+          add<GlideFragment>(R.id.fragment_container)
+        }
+      }
     }
   }
 
@@ -71,6 +86,8 @@ class MainActivity : AppCompatActivity() {
     NONE,
     DIALOG_FRAGMENT,
     COORDINATOR,
-    COMPLEX_BACKGROUND
+    COMPLEX_BACKGROUND,
+    FRAGMENT_MANAGER,
+    GLIDE
   }
 }
