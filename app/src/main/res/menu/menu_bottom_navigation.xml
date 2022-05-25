@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_rest"
+        android:icon="@drawable/ic_chair_24"
+        android:title="chair"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/navigation_bonus"
+        android:icon="@drawable/ic_bookmark_24"
+        android:title="bookmark"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/navigation_basket"
+        android:icon="@drawable/ic_blender_24"
+        android:title="blender"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_drafts_24"
+        android:title="drafts"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/ic_today_24"
+        android:title="calendar"
+        app:showAsAction="always" />
+</menu>

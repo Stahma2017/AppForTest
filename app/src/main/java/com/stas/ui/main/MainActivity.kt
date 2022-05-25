@@ -102,6 +102,7 @@ class MainActivity : AppCompatActivity() {
     FRAGMENT_MANAGER,
     GLIDE,
     BITMAP_TRANSFORMATIONS,
-    BLUR_EFFECT
+    BLUR_EFFECT,
+    BLUR_EFFECT_LIST
   }
 }

@@ -8,15 +8,23 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentContainerView
+import androidx.fragment.app.commit
+import androidx.fragment.app.replace
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.checkbox.MaterialCheckBox
 import com.google.android.material.slider.Slider
 import com.stas.appfortest.R
+import com.stas.ui.blureffect.blureffectslist.BlurEffectsListFragment
+import com.stas.ui.main.MainActivity
 
 class BlurEffectActivity : AppCompatActivity() {
-  lateinit var image: ImageView
-  lateinit var sliderX: Slider
-  lateinit var sliderY: Slider
-  lateinit var checkbox: MaterialCheckBox
+  private lateinit var image: ImageView
+  private lateinit var sliderX: Slider
+  private lateinit var sliderY: Slider
+  private lateinit var checkbox: MaterialCheckBox
+  private lateinit var button: MaterialButton
+  private lateinit var container: FragmentContainerView
 
   var blurRadiusX = 1f
   var blurRadiusY = 1f
@@ -55,10 +63,13 @@ class BlurEffectActivity : AppCompatActivity() {
     checkbox.setOnCheckedChangeListener { compoundButton, isChecked ->
       if (isChecked) {
         image.setRenderEffect(blurEffect)
-      }
-      else {
+      } else {
         image.setRenderEffect(null)
       }
+    }
+
+    button.setOnClickListener {
+      navigateTo(MainActivity.Screen.BLUR_EFFECT_LIST)
     }
 
   }
@@ -68,6 +79,19 @@ class BlurEffectActivity : AppCompatActivity() {
     sliderX = findViewById(R.id.blur_activity_slider_x)
     sliderY = findViewById(R.id.blur_activity_slider_y)
     checkbox = findViewById(R.id.blur_activity_checkbox)
+    button = findViewById(R.id.blur_activity_next)
+    container = findViewById(R.id.blur_activity_container)
+  }
+
+  private fun navigateTo(screen: MainActivity.Screen) {
+    when (screen) {
+      MainActivity.Screen.BLUR_EFFECT_LIST -> {
+        supportFragmentManager.commit {
+          replace<BlurEffectsListFragment>(R.id.blur_activity_container)
+        }
+      }
+      else -> {}
+    }
   }
 
 }

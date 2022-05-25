@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.stas.appfortest.DataHolder
@@ -22,7 +23,7 @@ class CoordinatorFragment : Fragment() {
     parentFragmentManager.commit {
       setReorderingAllowed(true)
       addToBackStack(null)
-      add<ImageMatrixFragment>(R.id.container)
+      replace<ImageMatrixFragment>(R.id.container)
     }
   }
 
@@ -32,7 +33,7 @@ class CoordinatorFragment : Fragment() {
   ): View? {
     val view = inflater.inflate(R.layout.fragment_coordinator, container, false)
     bindViews(view)
-    return view;
+    return view
   }
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

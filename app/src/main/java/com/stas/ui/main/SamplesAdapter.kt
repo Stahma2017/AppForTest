@@ -1,6 +1,5 @@
 package com.stas.ui.main
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -28,7 +27,6 @@ class SamplesAdapter(val sampleClick: (MainActivity.Screen) -> Unit) :
 
   inner class ViewHolder(val binding: ItemSampleBinding) : RecyclerView.ViewHolder(binding.root) {
     fun bind(item: SampleItem) {
-      Log.d("TEST12", "bind(), adapterPosition = $adapterPosition")
       binding.sampleTitle.text = item.title
       itemView.setOnClickListener { sampleClick(item.sampleType) }
     }

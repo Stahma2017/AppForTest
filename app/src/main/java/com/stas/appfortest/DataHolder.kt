@@ -1,5 +1,6 @@
 package com.stas.appfortest
 
+import com.stas.ui.blureffect.blureffectslist.adapter.BlurSamplesAdapter
 import com.stas.ui.main.MainActivity
 import com.stas.ui.main.SamplesAdapter
 
@@ -28,5 +29,21 @@ object DataHolder {
     SamplesAdapter.SampleItem("Lorem ipsum dolor sit amet", MainActivity.Screen.NONE),
     SamplesAdapter.SampleItem("Lorem ipsum dolor sit amet", MainActivity.Screen.NONE),
     SamplesAdapter.SampleItem("Lorem ipsum dolor sit amet", MainActivity.Screen.NONE)
+  )
+
+  val blurFragmentItems = mutableListOf<BlurSamplesAdapter.BlurSampleItem>(
+    BlurSamplesAdapter.BlurSampleItem("Lorem ipsum dolor sit amet", R.drawable.pic_android),
+    BlurSamplesAdapter.BlurSampleItem("Lorem ipsum dolor sit amet", R.drawable.pic_art1),
+    BlurSamplesAdapter.BlurSampleItem("Lorem ipsum dolor sit amet", R.drawable.pic_art2),
+    BlurSamplesAdapter.BlurSampleItem("Lorem ipsum dolor sit amet", R.drawable.pic_android),
+    BlurSamplesAdapter.BlurSampleItem("Lorem ipsum dolor sit amet", R.drawable.pic_art3),
+    BlurSamplesAdapter.BlurSampleItem("Lorem ipsum dolor sit amet", R.drawable.pic_art1),
+    BlurSamplesAdapter.BlurSampleItem("Lorem ipsum dolor sit amet", R.drawable.pic_android),
+    BlurSamplesAdapter.BlurSampleItem("Lorem ipsum dolor sit amet", R.drawable.pic_art2),
+    BlurSamplesAdapter.BlurSampleItem("Lorem ipsum dolor sit amet", R.drawable.pic_art3),
+    BlurSamplesAdapter.BlurSampleItem("Lorem ipsum dolor sit amet", R.drawable.pic_art1),
+    BlurSamplesAdapter.BlurSampleItem("Lorem ipsum dolor sit amet", R.drawable.pic_android),
+    BlurSamplesAdapter.BlurSampleItem("Lorem ipsum dolor sit amet", R.drawable.pic_art2),
+    BlurSamplesAdapter.BlurSampleItem("Lorem ipsum dolor sit amet", R.drawable.pic_art3)
   )
 }
