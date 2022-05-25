@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/celery">
+
+    <ImageView
+        android:id="@+id/blur_activity_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/pic_android"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:id="@+id/blur_activity_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Blur"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/blur_activity_image" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/blur_activity_label_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:text="X Blur"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@id/blur_activity_slider_x"
+        app:layout_constraintEnd_toStartOf="@id/blur_activity_label_x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/blur_activity_slider_x" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/blur_activity_slider_x"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:valueFrom="1.0"
+        android:valueTo="100.0"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/blur_activity_label_x"
+        app:layout_constraintTop_toBottomOf="@id/blur_activity_checkbox" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/blur_activity_label_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:text="X Blur"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@id/blur_activity_slider_y"
+        app:layout_constraintEnd_toStartOf="@id/blur_activity_slider_y"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/blur_activity_slider_y" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/blur_activity_slider_y"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:valueFrom="1.0"
+        android:valueTo="100.0"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/blur_activity_label_y"
+        app:layout_constraintTop_toBottomOf="@id/blur_activity_slider_x" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

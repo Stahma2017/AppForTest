@@ -24,6 +24,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.stas.ui.coordinator.CoordinatorActivity"/>
+        <activity android:name="com.stas.ui.blureffect.BlurEffectActivity"/>
     </application>
 
 </manifest>

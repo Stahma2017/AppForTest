@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.stas.appfortest.DataHolder
 import com.stas.appfortest.R
 import com.stas.ui.bitmaptransformations.BitmapTransformationsFragment
+import com.stas.ui.blureffect.BlurEffectActivity
 import com.stas.ui.complexbackgroun.ComplexBackgroundFragment
 import com.stas.ui.coordinator.CoordinatorActivity
 import com.stas.ui.dialog.TestDialogFragment
@@ -87,6 +88,9 @@ class MainActivity : AppCompatActivity() {
           add<BitmapTransformationsFragment>(R.id.fragment_container)
         }
       }
+      Screen.BLUR_EFFECT -> {
+        startActivity(Intent(this, BlurEffectActivity::class.java))
+      }
     }
   }
 
@@ -97,6 +101,7 @@ class MainActivity : AppCompatActivity() {
     COMPLEX_BACKGROUND,
     FRAGMENT_MANAGER,
     GLIDE,
-    BITMAP_TRANSFORMATIONS
+    BITMAP_TRANSFORMATIONS,
+    BLUR_EFFECT
   }
 }

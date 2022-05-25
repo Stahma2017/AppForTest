@@ -10,7 +10,8 @@ object DataHolder {
     SamplesAdapter.SampleItem("Complex Background", MainActivity.Screen.COMPLEX_BACKGROUND),
     SamplesAdapter.SampleItem("Fragment manager", MainActivity.Screen.FRAGMENT_MANAGER),
     SamplesAdapter.SampleItem("Glide", MainActivity.Screen.GLIDE),
-    SamplesAdapter.SampleItem("Bitmap Trasnformations", MainActivity.Screen.BITMAP_TRANSFORMATIONS)
+    SamplesAdapter.SampleItem("Bitmap Trasnformations", MainActivity.Screen.BITMAP_TRANSFORMATIONS),
+    SamplesAdapter.SampleItem("Blur effect", MainActivity.Screen.BLUR_EFFECT)
   )
 
   val coordinatorFragmentItems = mutableListOf<SamplesAdapter.SampleItem>(
