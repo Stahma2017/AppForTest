@@ -11,6 +11,7 @@ import com.stas.appfortest.DataHolder
 import com.stas.appfortest.R
 import com.stas.ui.bitmaptransformations.BitmapTransformationsFragment
 import com.stas.ui.blureffect.BlurEffectActivity
+import com.stas.ui.bottomsheet.BottomsheetFragment
 import com.stas.ui.complexbackgroun.ComplexBackgroundFragment
 import com.stas.ui.coordinator.CoordinatorActivity
 import com.stas.ui.dialog.TestDialogFragment
@@ -47,13 +48,6 @@ class MainActivity : AppCompatActivity() {
 
   private fun navigateTo(screen: Screen) {
     when (screen) {
-      /*Screen.IMAGE_MATRIX_FRAGMENT -> {
-        supportFragmentManager.commit {
-          setReorderingAllowed(true)
-          addToBackStack(screen.name)
-          add<ImageMatrixFragment>(R.id.fragment_container)
-        }
-      }*/
       Screen.DIALOG_FRAGMENT -> {
         TestDialogFragment().show(supportFragmentManager, "dialog")
       }
@@ -91,6 +85,13 @@ class MainActivity : AppCompatActivity() {
       Screen.BLUR_EFFECT -> {
         startActivity(Intent(this, BlurEffectActivity::class.java))
       }
+      Screen.BOTTOMSHEET -> {
+        supportFragmentManager.commit {
+          setReorderingAllowed(true)
+          addToBackStack(screen.name)
+          add<BottomsheetFragment>(R.id.fragment_container)
+        }
+      }
     }
   }
 
@@ -103,6 +104,6 @@ class MainActivity : AppCompatActivity() {
     GLIDE,
     BITMAP_TRANSFORMATIONS,
     BLUR_EFFECT,
-    BLUR_EFFECT_LIST
+    BOTTOMSHEET
   }
 }

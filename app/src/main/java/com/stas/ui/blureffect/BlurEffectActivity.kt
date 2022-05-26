@@ -69,7 +69,7 @@ class BlurEffectActivity : AppCompatActivity() {
     }
 
     button.setOnClickListener {
-      navigateTo(MainActivity.Screen.BLUR_EFFECT_LIST)
+      navigateTo(Screen.BLUR_EFFECT_LIST)
     }
 
   }
@@ -83,15 +83,19 @@ class BlurEffectActivity : AppCompatActivity() {
     container = findViewById(R.id.blur_activity_container)
   }
 
-  private fun navigateTo(screen: MainActivity.Screen) {
+  private fun navigateTo(screen: Screen) {
     when (screen) {
-      MainActivity.Screen.BLUR_EFFECT_LIST -> {
+      Screen.BLUR_EFFECT_LIST -> {
         supportFragmentManager.commit {
           replace<BlurEffectsListFragment>(R.id.blur_activity_container)
         }
       }
       else -> {}
     }
+  }
+
+  enum class Screen {
+    BLUR_EFFECT_LIST
   }
 
 }
