@@ -5,9 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.add
 import androidx.fragment.app.commit
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.stas.appfortest.DataHolder
+import androidx.fragment.app.replace
 import com.stas.appfortest.R
 import com.stas.ui.bitmaptransformations.BitmapTransformationsFragment
 import com.stas.ui.blureffect.BlurEffectActivity
@@ -19,34 +17,21 @@ import com.stas.ui.fragmentmanager.FragmentManagerFragment
 import com.stas.ui.glide.GlideFragment
 
 class MainActivity : AppCompatActivity() {
-  lateinit var samples: RecyclerView
 
-  private val adapter: SamplesAdapter = SamplesAdapter { sampleType ->
-    navigateTo(sampleType)
-  }
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
-    bindViews()
     prepareViews()
+    if (savedInstanceState == null) {
+      navigateTo(Screen.MAIN_ROOT)
+    }
   }
 
   private fun prepareViews() {
-    setupSamples()
+
   }
 
-  private fun setupSamples() {
-    samples.layoutManager = LinearLayoutManager(this, RecyclerView.VERTICAL, false)
-    samples.adapter = adapter
-    samples.addItemDecoration(VerticalItemDecoration(20))
-    adapter.items = DataHolder.samples
-  }
-
-  private fun bindViews() {
-    samples = findViewById(R.id.samples)
-  }
-
-  private fun navigateTo(screen: Screen) {
+  fun navigateTo(screen: Screen) {
     when (screen) {
       Screen.DIALOG_FRAGMENT -> {
         TestDialogFragment().show(supportFragmentManager, "dialog")
@@ -92,6 +77,12 @@ class MainActivity : AppCompatActivity() {
           add<BottomsheetFragment>(R.id.fragment_container)
         }
       }
+      Screen.MAIN_ROOT -> {
+        supportFragmentManager.commit {
+          setReorderingAllowed(true)
+          replace<MainFragment>(R.id.fragment_container)
+        }
+      }
     }
   }
 
@@ -104,6 +95,7 @@ class MainActivity : AppCompatActivity() {
     GLIDE,
     BITMAP_TRANSFORMATIONS,
     BLUR_EFFECT,
-    BOTTOMSHEET
+    BOTTOMSHEET,
+    MAIN_ROOT
   }
 }

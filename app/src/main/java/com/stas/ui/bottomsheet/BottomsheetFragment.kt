@@ -12,10 +12,7 @@ import com.stas.ui.base.BaseFragment
 class BottomsheetFragment : BaseFragment<FragmentBottomsheetBinding>() {
   private lateinit var bottomsheetBehavior: BottomSheetBehavior<ConstraintLayout>
 
-  override fun provideViewBinding(
-    inflater: LayoutInflater,
-    container: ViewGroup?
-  ): FragmentBottomsheetBinding = FragmentBottomsheetBinding.inflate(inflater, container, false)
+  override fun provideViewBinding(inflater: LayoutInflater, container: ViewGroup?): FragmentBottomsheetBinding = FragmentBottomsheetBinding.inflate(inflater, container, false)
 
   override fun prepareUi(savedInstanceState: Bundle?) {
     bottomsheetBehavior = BottomSheetBehavior.from(binding.sheetContainer)
