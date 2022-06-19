@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewbinding.ViewBinding
+import com.stas.ui.main.MainActivity
 
 abstract class BaseFragment<Binding : ViewBinding> : Fragment() {
 
@@ -23,6 +24,10 @@ abstract class BaseFragment<Binding : ViewBinding> : Fragment() {
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     prepareUi(savedInstanceState)
+  }
+
+  protected fun navigateTo(screen: MainActivity.Screen) {
+    (activity as MainActivity).navigateTo(screen)
   }
 
   override fun onDestroyView() {

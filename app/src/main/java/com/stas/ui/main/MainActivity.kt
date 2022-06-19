@@ -10,11 +10,13 @@ import com.stas.appfortest.R
 import com.stas.ui.bitmaptransformations.BitmapTransformationsFragment
 import com.stas.ui.blureffect.BlurEffectActivity
 import com.stas.ui.bottomsheet.BottomsheetFragment
+import com.stas.ui.chart.ChartsFragment
 import com.stas.ui.complexbackgroun.ComplexBackgroundFragment
 import com.stas.ui.coordinator.CoordinatorActivity
 import com.stas.ui.dialog.TestDialogFragment
 import com.stas.ui.fragmentmanager.FragmentManagerFragment
 import com.stas.ui.glide.GlideFragment
+import com.stas.ui.mnogoru.MnogoruFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -27,9 +29,7 @@ class MainActivity : AppCompatActivity() {
     }
   }
 
-  private fun prepareViews() {
-
-  }
+  private fun prepareViews() { }
 
   fun navigateTo(screen: Screen) {
     when (screen) {
@@ -83,6 +83,20 @@ class MainActivity : AppCompatActivity() {
           replace<MainFragment>(R.id.fragment_container)
         }
       }
+      Screen.MNOGORU -> {
+        supportFragmentManager.commit {
+          setReorderingAllowed(true)
+          addToBackStack(screen.name)
+          add<MnogoruFragment>(R.id.fragment_container)
+        }
+      }
+      Screen.MNOGORU_CHARTS -> {
+        supportFragmentManager.commit {
+          setReorderingAllowed(true)
+          addToBackStack(screen.name)
+          add<ChartsFragment>(R.id.fragment_container)
+        }
+      }
     }
   }
 
@@ -96,6 +110,8 @@ class MainActivity : AppCompatActivity() {
     BITMAP_TRANSFORMATIONS,
     BLUR_EFFECT,
     BOTTOMSHEET,
-    MAIN_ROOT
+    MAIN_ROOT,
+    MNOGORU,
+    MNOGORU_CHARTS
   }
 }
