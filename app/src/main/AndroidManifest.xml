@@ -11,10 +11,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppForTest">
+        android:theme="@style/Theme.PurpleTheme">
         <activity
             android:name="com.stas.ui.main.MainActivity"
-            android:theme="@style/BasicBackgroundTheme"
+            android:theme="@style/Theme.PurpleTheme"
             android:windowSoftInputMode="adjustResize"
             android:exported="true">
             <intent-filter>

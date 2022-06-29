@@ -18,12 +18,12 @@ class GlideFragment : Fragment() {
   override fun onCreateView(
     inflater: LayoutInflater, container: ViewGroup?,
     savedInstanceState: Bundle?): View? {
-    return inflater.inflate(R.layout.fragment_glide, container, false)
+    return inflater.inflate(R.layout.fragment_md_components, container, false)
   }
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-    bindViews(view)
-    prepareUi()
+    //bindViews(view)
+    //prepareUi()
   }
 
   private fun prepareUi() {
