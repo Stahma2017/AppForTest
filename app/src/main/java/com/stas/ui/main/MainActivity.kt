@@ -10,6 +10,7 @@ import com.stas.appfortest.R
 import com.stas.ui.bitmaptransformations.BitmapTransformationsFragment
 import com.stas.ui.blureffect.BlurEffectActivity
 import com.stas.ui.bottomsheet.BottomsheetFragment
+import com.stas.ui.bottomsheetmodal.BottomsheetModalFragment
 import com.stas.ui.complexbackgroun.ComplexBackgroundFragment
 import com.stas.ui.coordinator.CoordinatorActivity
 import com.stas.ui.dialog.TestDialogFragment
@@ -83,6 +84,10 @@ class MainActivity : AppCompatActivity() {
           replace<MainFragment>(R.id.fragment_container)
         }
       }
+      Screen.BOTTOMSHEET_MODAL -> {
+        val sheet = BottomsheetModalFragment()
+        sheet.show(supportFragmentManager, screen.name)
+      }
     }
   }
 
@@ -96,6 +101,7 @@ class MainActivity : AppCompatActivity() {
     BITMAP_TRANSFORMATIONS,
     BLUR_EFFECT,
     BOTTOMSHEET,
+    BOTTOMSHEET_MODAL,
     MAIN_ROOT
   }
 }
