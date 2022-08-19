@@ -13,4 +13,16 @@
         <item name="colorAccent">@color/white_60</item>
     </style>
 
+    <!--<style name="MyStyle.NumberPicker" parent="@android:style/Widget.NumberPicker" >
+        <item name="colorPrimary">@color/egyptian_blue_dark</item>
+        <item name="colorPrimaryDark">@color/movix_red</item>
+        <item name="colorOnPrimary">@color/primary_dark</item>
+    </style>-->
+
+    <style name="ThemeOverlay.NumberPicker" parent="" >
+        <item name="colorControlNormal">@color/picker_color</item>
+    </style>
+
+
+
 </resources>

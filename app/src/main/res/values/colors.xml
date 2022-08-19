@@ -55,6 +55,8 @@
     <color name="egyptian_blue">#1F40A4</color>
     <color name="egyptian_blue_dark">#0B3CB5</color>
 
+    <color name="picker_color">#272829</color>
+
     <color name="lime_0">#0000FF00</color>
     <color name="mauve_dark">#DFB5F7</color>
     <color name="mauve_dark_0">#00DFB5F7</color>

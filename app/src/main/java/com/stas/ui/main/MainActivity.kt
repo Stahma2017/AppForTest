@@ -16,6 +16,7 @@ import com.stas.ui.coordinator.CoordinatorActivity
 import com.stas.ui.dialog.TestDialogFragment
 import com.stas.ui.fragmentmanager.FragmentManagerFragment
 import com.stas.ui.glide.GlideFragment
+import com.stas.ui.numberpicker.NumberPickerFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -88,6 +89,11 @@ class MainActivity : AppCompatActivity() {
         val sheet = BottomsheetModalFragment()
         sheet.show(supportFragmentManager, screen.name)
       }
+
+      Screen.NUMBER_PICKER -> {
+        val sheet = NumberPickerFragment()
+        sheet.show(supportFragmentManager, screen.name)
+      }
     }
   }
 
@@ -102,6 +108,7 @@ class MainActivity : AppCompatActivity() {
     BLUR_EFFECT,
     BOTTOMSHEET,
     BOTTOMSHEET_MODAL,
-    MAIN_ROOT
+    MAIN_ROOT,
+    NUMBER_PICKER
   }
 }
