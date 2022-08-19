@@ -6,5 +6,7 @@ class Test: TestAbstractClass() {
     TODO("Not yet implemented")
   }
 
+  //commit 0
+
   //commit 1
 }
